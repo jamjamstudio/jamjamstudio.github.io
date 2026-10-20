@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JAMJAM — YouTube thumbnail designer</title>
-<meta name="description" content="YouTube thumbnails for gaming, Minecraft, sports and storytelling channels. $20 per thumbnail, first draft in 48–72h, 2 revisions included.">
+<meta name="description" content="YouTube thumbnails for gaming, Minecraft, sports and storytelling channels. $20 per thumbnail for my first 5 clients, then $25. First draft in 48–72h, 2 revisions included.">
 <meta property="og:title" content="JAMJAM — YouTube thumbnail designer">
-<meta property="og:description" content="$20 per thumbnail · 48–72h delivery · 2 revisions · Full HD 1920×1080">
+<meta property="og:description" content="Launch offer: $20 per thumbnail for the first 5 clients · 48–72h delivery · 2 revisions · Full HD 1920×1080">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,11 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter
 a { color: var(--text); }
 a:hover { color: #FFFFFF; }
 img { max-width: 100%; }
-.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.wrap { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+body { position: relative; overflow-x: hidden; }
+.dots { position: absolute; left: 0; right: 0; z-index: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1.2px, transparent 1.8px); background-size: 14px 14px; }
+.dots-top { top: 0; height: 1100px; -webkit-mask-image: radial-gradient(ellipse 75% 85% at 85% 0%, #000 0%, transparent 72%); mask-image: radial-gradient(ellipse 75% 85% at 85% 0%, #000 0%, transparent 72%); }
+.dots-bottom { bottom: 0; height: 900px; -webkit-mask-image: radial-gradient(ellipse 70% 85% at 10% 100%, #000 0%, transparent 70%); mask-image: radial-gradient(ellipse 70% 85% at 10% 100%, #000 0%, transparent 70%); }
 .display { font-family: 'Anton', Impact, 'Arial Narrow Bold', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 0.95; margin: 0; }
 .btn { display: inline-block; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; background: var(--accent); color: var(--bg); }
 .btn:hover { color: var(--bg); filter: brightness(1.08); }
@@ -40,6 +44,8 @@ figcaption span:last-child { color: var(--muted); }
 </style>
 </head>
 <body>
+<div class="dots dots-top" aria-hidden="true"></div>
+<div class="dots dots-bottom" aria-hidden="true"></div>
 <div class="wrap">
 
 <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 28px 0">
@@ -63,7 +69,7 @@ figcaption span:last-child { color: var(--muted); }
 <a href="#contact" class="btn-ghost">Message @jamjamstudiios</a>
 </div>
 <ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 15px; color: #D4D4D8">
-<li><strong style="color: var(--text)">$20</strong> per thumbnail</li>
+<li><strong style="color: var(--text)">$20</strong> for my first 5 clients, then $25</li>
 <li><strong style="color: var(--text)">48–72h</strong> delivery</li>
 <li><strong style="color: var(--text)">2 revisions</strong> included</li>
 <li><strong style="color: var(--text)">1920×1080</strong> Full HD</li>
@@ -195,8 +201,8 @@ figcaption span:last-child { color: var(--muted); }
 
 <section id="pricing" style="padding: 64px 0; display: flex; flex-wrap: wrap; gap: 24px">
 <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px; padding: 36px; border-radius: 20px; border: 2px solid var(--accent)">
-<h2 style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent)">Pricing</h2>
-<p style="margin: 0; display: flex; align-items: baseline; gap: 12px"><span class="display" style="font-size: 88px; line-height: 1">$20</span><span class="muted" style="font-size: 18px">per thumbnail</span></p>
+<h2 style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent)">Launch offer</h2>
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px"><span class="display" style="font-size: 88px; line-height: 1">$20</span><span class="muted" style="font-size: 18px">per thumbnail for my first 5 clients, then $25</span></p>
 <ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.4">
 <li>Full HD 1920×1080 PNG, plus a JPG under 2 MB ready to upload</li>
 <li>Custom Minecraft scenes, built and posed in-game</li>

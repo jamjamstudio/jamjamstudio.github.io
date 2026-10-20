@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAMJAM — YouTube thumbnail designer</title>
+<meta name="description" content="YouTube thumbnails for gaming, Minecraft, sports and storytelling channels. $20 per thumbnail, first draft in 48–72h, 2 revisions included.">
+<meta property="og:title" content="JAMJAM — YouTube thumbnail designer">
+<meta property="og:description" content="$20 per thumbnail · 48–72h delivery · 2 revisions · Full HD 1920×1080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --accent: #FFD23F; --bg: #0E0E10; --card: #18181B; --line: #27272A; --muted: #A1A1AA; --text: #F4F4F5; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; }
+a { color: var(--text); }
+a:hover { color: #FFFFFF; }
+img { max-width: 100%; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.display { font-family: 'Anton', Impact, 'Arial Narrow Bold', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 0.95; margin: 0; }
+.btn { display: inline-block; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; background: var(--accent); color: var(--bg); }
+.btn:hover { color: var(--bg); filter: brightness(1.08); }
+.btn-ghost { display: inline-block; text-decoration: none; font-weight: 600; font-size: 16px; padding: 14px 26px; border-radius: 999px; border: 2px solid #3F3F46; }
+section { border-top: 1px solid var(--line); }
+.chip { font-family: inherit; font-size: 14px; font-weight: 600; min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 2px solid #3F3F46; background: transparent; color: var(--text); cursor: pointer; }
+.chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--bg); font-weight: 700; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(440px, 100%), 1fr)); gap: 40px 28px; }
+.gallery figure { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.gallery figure[hidden] { display: none; }
+.thumb { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; background: var(--card); }
+figcaption { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
+figcaption span:first-child { font-weight: 600; }
+figcaption span:last-child { color: var(--muted); }
+.feed-item { width: 320px; max-width: 100%; display: flex; flex-direction: column; gap: 10px; }
+.bar { border-radius: 6px; background: #3F3F46; height: 12px; }
+.card { padding: 28px; border-radius: 16px; background: var(--card); }
+.muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 28px 0">
+<a href="#top" style="font-family: 'Anton', Impact, 'Arial Narrow Bold', sans-serif; font-size: 34px; letter-spacing: 1px; text-decoration: none">JAM<span style="color: var(--accent)">JAM</span></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: 15px; font-weight: 500">
+<a href="#work" style="text-decoration: none; padding: 12px 0">Work</a>
+<a href="#process" style="text-decoration: none; padding: 12px 0">How it works</a>
+<a href="#pricing" style="text-decoration: none; padding: 12px 0">Pricing</a>
+<a href="#contact" class="btn" style="font-size: 15px; padding: 12px 22px">Order on Discord</a>
+</nav>
+</header>
+
+<main>
+<div id="top" style="padding: 48px 0 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent)">YouTube thumbnail designer</p>
+<h1 class="display" style="font-size: clamp(52px, 6.4vw, 96px); max-width: 12ch">Thumbnails that get the click.</h1>
+<p class="muted" style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 52ch">I design bold, readable thumbnails for gaming, sports and storytelling channels, including custom Minecraft scenes built in-game. Clear pricing, fast delivery, one commission at a time.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#work" class="btn">See my work</a>
+<a href="#contact" class="btn-ghost">Message @jamjamstudiios</a>
+</div>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 15px; color: #D4D4D8">
+<li><strong style="color: var(--text)">$20</strong> per thumbnail</li>
+<li><strong style="color: var(--text)">48–72h</strong> delivery</li>
+<li><strong style="color: var(--text)">2 revisions</strong> included</li>
+<li><strong style="color: var(--text)">1920×1080</strong> Full HD</li>
+</ul>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<img class="thumb" src="img/lamine.webp" alt="Thumbnail: Lamine Yamal with blacked-out eyes in front of flames, holding the World Cup and a baby bottle" style="border-radius: 16px; border: 1px solid var(--line)">
+<p class="muted" style="margin: 0; font-size: 14px">Lamine Yamal · Sports</p>
+</div>
+</div>
+
+<section id="work" style="padding: 48px 0 64px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px">
+<h2 class="display" style="font-size: 56px; line-height: 1">Selected work</h2>
+<div role="group" aria-label="Filter by category" id="filters" style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="chip" data-cat="All" aria-pressed="true">All</button>
+<button type="button" class="chip" data-cat="Gaming" aria-pressed="false">Gaming</button>
+<button type="button" class="chip" data-cat="Minecraft" aria-pressed="false">Minecraft</button>
+<button type="button" class="chip" data-cat="Horror &amp; lore" aria-pressed="false">Horror &amp; lore</button>
+<button type="button" class="chip" data-cat="Sports" aria-pressed="false">Sports</button>
+<button type="button" class="chip" data-cat="Music" aria-pressed="false">Music</button>
+<button type="button" class="chip" data-cat="Explainer" aria-pressed="false">Explainer</button>
+</div>
+</div>
+
+<div class="gallery" id="gallery">
+<figure data-tags="Gaming|Minecraft">
+<img class="thumb" src="img/minecraft.webp" alt="Thumbnail: Minecraft player in purple netherite armor next to an activated End portal" loading="lazy">
+<figcaption><span>Minecraft End portal</span><span>Minecraft</span></figcaption>
+</figure>
+<figure data-tags="Gaming|Horror &amp; lore">
+<img class="thumb" src="img/the-truth.webp" alt="Thumbnail titled “The Truth.”: a purple cat plush between a taped photo and an experiment report" loading="lazy">
+<figcaption><span>Poppy Playtime: The Truth.</span><span>Horror &amp; lore</span></figcaption>
+</figure>
+<figure data-tags="Gaming|Minecraft">
+<img class="thumb" src="img/minecraft-hunters.webp" alt="Thumbnail: a crying Minecraft Noob hiding behind a wall from three players in netherite armor" loading="lazy">
+<figcaption><span>Minecraft Noob vs netherite players</span><span>Minecraft</span></figcaption>
+</figure>
+<figure data-tags="Sports">
+<img class="thumb" src="img/kobe.webp" alt="Thumbnail: Kobe Bryant smiling in a Lakers jersey next to old photos, with his name in large type" loading="lazy">
+<figcaption><span>Kobe Bryant</span><span>Sports</span></figcaption>
+</figure>
+<figure data-tags="Gaming|Horror &amp; lore">
+<img class="thumb" src="img/little-nightmares.webp" alt="Thumbnail titled “Complete Story”: a child in a yellow raincoat sitting among masks, with three game scenes behind" loading="lazy">
+<figcaption><span>Little Nightmares: Complete Story</span><span>Horror &amp; lore</span></figcaption>
+</figure>
+<figure data-tags="Gaming|Minecraft">
+<img class="thumb" src="img/minecraft-tools.webp" alt="Thumbnail: a Minecraft character between the Photoshop and Clip Studio Paint icons" loading="lazy">
+<figcaption><span>Minecraft skin showcase</span><span>Minecraft</span></figcaption>
+</figure>
+<figure data-tags="Sports">
+<img class="thumb" src="img/lamine.webp" alt="Thumbnail: Lamine Yamal with blacked-out eyes in front of flames, holding the World Cup and a baby bottle" loading="lazy">
+<figcaption><span>Lamine Yamal</span><span>Sports</span></figcaption>
+</figure>
+<figure data-tags="Explainer">
+<img class="thumb" src="img/shorts-2026.webp" alt="Thumbnail: the YouTube Shorts logo over a big 2026, with a rising chart and falling dollar bills" loading="lazy">
+<figcaption><span>YouTube Shorts in 2026</span><span>Explainer</span></figcaption>
+</figure>
+<figure data-tags="Music">
+<img class="thumb" src="img/marco-castello.webp" alt="Thumbnail: collage portrait of singer Marco Castello with his name, a polaroid and piano keys" loading="lazy">
+<figcaption><span>Marco Castello</span><span>Music</span></figcaption>
+</figure>
+<figure data-tags="Gaming|Horror &amp; lore">
+<img class="thumb" src="img/resident-evil.webp" alt="Thumbnail: a screaming zombie under the Resident Evil logo, with the word FINALE" loading="lazy">
+<figcaption><span>Resident Evil: Finale</span><span>Gaming</span></figcaption>
+</figure>
+<figure data-tags="Gaming|Sports">
+<img class="thumb" src="img/fc-cards.webp" alt="Thumbnail: EA Sports FC cards of Lamine Yamal and Puskás on both sides of a squad badge" loading="lazy">
+<figcaption><span>EA Sports FC: Lamine Yamal vs Puskás</span><span>Gaming</span></figcaption>
+</figure>
+</div>
+<p class="muted" style="margin: 0; font-size: 15px; line-height: 1.5; max-width: 70ch">Thumbnails that show my clients’ faces stay private. Ask me on Discord to see more work.</p>
+</section>
+
+<section style="padding: 64px 0; display: flex; flex-direction: column; gap: 24px">
+<h2 class="display" style="font-size: 56px; line-height: 1">Built for the feed</h2>
+<p class="muted" style="margin: 0; font-size: 18px; line-height: 1.5; max-width: 60ch">Viewers decide in a second, at this size. This is how my thumbnails read in the YouTube feed.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 28px 24px">
+<div class="feed-item">
+<img class="thumb" src="img/minecraft.webp" alt="Minecraft thumbnail at feed size" loading="lazy" style="border-radius: 10px">
+<div aria-hidden="true" style="display: flex; gap: 10px">
+<div style="flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--line)"></div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 2px">
+<div class="bar" style="width: 92%"></div><div class="bar" style="width: 64%"></div><div class="bar" style="width: 46%; height: 10px; background: var(--line)"></div>
+</div>
+</div>
+</div>
+<div class="feed-item">
+<img class="thumb" src="img/kobe.webp" alt="Kobe Bryant thumbnail at feed size" loading="lazy" style="border-radius: 10px">
+<div aria-hidden="true" style="display: flex; gap: 10px">
+<div style="flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--line)"></div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 2px">
+<div class="bar" style="width: 88%"></div><div class="bar" style="width: 52%"></div><div class="bar" style="width: 40%; height: 10px; background: var(--line)"></div>
+</div>
+</div>
+</div>
+<div class="feed-item">
+<img class="thumb" src="img/the-truth.webp" alt="“The Truth.” thumbnail at feed size" loading="lazy" style="border-radius: 10px">
+<div aria-hidden="true" style="display: flex; gap: 10px">
+<div style="flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--line)"></div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 2px">
+<div class="bar" style="width: 95%"></div><div class="bar" style="width: 70%"></div><div class="bar" style="width: 44%; height: 10px; background: var(--line)"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="process" style="padding: 64px 0; display: flex; flex-direction: column; gap: 32px">
+<h2 class="display" style="font-size: 56px; line-height: 1">How it works</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
+<li class="card" style="display: flex; flex-direction: column; gap: 12px">
+<span class="display" style="font-size: 40px; line-height: 1; color: var(--accent)">01</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Send the brief</h3>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">Message me on Discord or by email with the video title, a few screenshots or clips, and the mood you want.</p>
+</li>
+<li class="card" style="display: flex; flex-direction: column; gap: 12px">
+<span class="display" style="font-size: 40px; line-height: 1; color: var(--accent)">02</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">First draft in 48–72h</h3>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">You get a full 1920×1080 first draft to review.</p>
+</li>
+<li class="card" style="display: flex; flex-direction: column; gap: 12px">
+<span class="display" style="font-size: 40px; line-height: 1; color: var(--accent)">03</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Two rounds of revisions</h3>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">Change text, colors or layout twice. Then you get the final files, ready to upload.</p>
+</li>
+</ol>
+</section>
+
+<section id="pricing" style="padding: 64px 0; display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px; padding: 36px; border-radius: 20px; border: 2px solid var(--accent)">
+<h2 style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent)">Pricing</h2>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 12px"><span class="display" style="font-size: 88px; line-height: 1">$20</span><span class="muted" style="font-size: 18px">per thumbnail</span></p>
+<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.4">
+<li>Full HD 1920×1080 PNG, plus a JPG under 2 MB ready to upload</li>
+<li>Custom Minecraft scenes, built and posed in-game</li>
+<li>First draft in 48–72 hours</li>
+<li>2 rounds of revisions included</li>
+<li>Single commissions, no contracts</li>
+</ul>
+<p class="muted" style="margin: 0; font-size: 15px">Payment: PayPal</p>
+<a href="#contact" class="btn" style="align-self: flex-start">Order on Discord</a>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 20px; background: var(--card)">
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Good to know</h3>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">I take one commission at a time, so every thumbnail gets my full attention.</p>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">Need thumbnails for a series? Message me and we plan them one video at a time.</p>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">Your footage and drafts stay private. Nothing is posted without your permission.</p>
+</div>
+</section>
+
+<section id="contact" style="padding: 80px 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px">
+<h2 class="display" style="font-size: clamp(48px, 7vw, 96px); max-width: 14ch">Got a video coming out?</h2>
+<p class="muted" style="margin: 0; font-size: 20px; line-height: 1.5; max-width: 52ch">Send me the title and a few screenshots on Discord or by email. I reply with a time slot and get started.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div class="card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 20px 28px">
+<span class="muted" style="font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase">Discord</span>
+<span style="font-size: 28px; font-weight: 700; color: var(--accent)">@jamjamstudiios</span>
+</div>
+<a href="mailto:oooojamjamwork@gmail.com" class="card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 20px 28px; text-decoration: none; min-width: 0">
+<span class="muted" style="font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase">Email</span>
+<span style="font-size: 24px; font-weight: 700; color: var(--accent); overflow-wrap: anywhere">oooojamjamwork@gmail.com</span>
+</a>
+</div>
+<p class="muted" style="margin: 0; font-size: 16px; line-height: 1.5">Send me a friend request on Discord: I accept requests within 24 hours.</p>
+</section>
+</main>
+
+<footer style="padding: 28px 0 40px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--muted)">
+<span>© 2026 JAMJAM · <a href="mailto:oooojamjamwork@gmail.com" style="color: var(--muted)">oooojamjamwork@gmail.com</a></span>
+<span>YouTube thumbnails · Clip Studio Paint</span>
+</footer>
+
+</div>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('#filters .chip');
+  var items = document.querySelectorAll('#gallery figure');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var cat = btn.getAttribute('data-cat');
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      items.forEach(function (fig) {
+        var tags = fig.getAttribute('data-tags').split('|');
+        fig.hidden = !(cat === 'All' || tags.indexOf(cat) !== -1);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
